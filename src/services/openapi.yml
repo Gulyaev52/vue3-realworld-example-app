@@ -66,7 +66,7 @@ paths:
           $ref: '#/components/responses/GenericError'
       security:
         - Token: []
-    put:
+    patch:
       tags:
         - User and Authentication
       summary: Update current user
@@ -240,7 +240,7 @@ paths:
           $ref: '#/components/responses/SingleArticleResponse'
         '422':
           $ref: '#/components/responses/GenericError'
-    put:
+    patch:
       tags:
         - Articles
       summary: Update an article
